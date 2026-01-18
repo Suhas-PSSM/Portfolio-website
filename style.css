@@ -441,11 +441,32 @@ nav ul li a:focus::after {
 }
 
 .work-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    display: flex;
     gap: 50px;
     margin-top: 60px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+
+    /* smooth horizontal scrolling */
+    scroll-behavior: smooth;
+    scrollbar-width: thin;          /* Firefox */
+    scrollbar-color: #00ced1 #0a0908;
 }
+
+/* WebKit scrollbar styling */
+.work-list::-webkit-scrollbar {
+    height: 8px;
+}
+
+.work-list::-webkit-scrollbar-track {
+    background: #0a0908;
+}
+
+.work-list::-webkit-scrollbar-thumb {
+    background: #00ced1;
+    border-radius: 10px;
+}
+
 
 .work {
     position: relative;
@@ -453,6 +474,9 @@ nav ul li a:focus::after {
     border-radius: 12px;
     border: 1px solid rgba(0, 206, 209, 0.3);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
+    width: 340px;
+    min-width: 340px;   
+    flex-shrink: 0;
 }
 
 .work:hover {
@@ -462,6 +486,7 @@ nav ul li a:focus::after {
 
 .work img {
     width: 100%;
+    height: auto;
     display: block;
     border-radius: 12px;
     transition: transform 0.5s ease;
