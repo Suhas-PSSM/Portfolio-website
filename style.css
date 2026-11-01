@@ -212,7 +212,7 @@ nav ul li a:focus::after {
 
 /* About Section */
 #about {
-    padding: 150px 0 120px;
+    padding: 120px 0;
     background: #0a0908;
     position: relative;
     background-image: url('images/pattern.png');
