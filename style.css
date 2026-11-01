@@ -599,7 +599,7 @@ nav ul li a:focus::after {
     border-radius: 8px;
     margin: 15px 0;
     box-shadow: 0 4px 15px rgba(0, 206, 209, 0.3);
-    font-weight: 800;
+    font-weight: 600;
     font-family: 'Source Sans Pro', sans-serif;
     letter-spacing: 1.5px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
