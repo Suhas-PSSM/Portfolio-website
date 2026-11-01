@@ -21,15 +21,13 @@ body {
 /* Header Section */
 #header {
     width: 100%;
-    min-height: 100vh;
-    height: auto;
+    height: 100vh;
     background: #0f0f0f;
     background-size: cover;
     background-position: center;
     color: #fff;
     position: relative;
-    overflow: visible;
-    padding-bottom: 50px;
+    overflow: hidden;
 }
 
 #header::before {
@@ -151,8 +149,6 @@ nav ul li a:focus::after {
 .header-text {
     margin-top: 30px;
     text-align: center;
-    position: relative;
-    z-index: 2;
     opacity: 0;
     transform: translateY(40px);
     animation: fadeInUp 1.2s ease forwards 0.6s;
@@ -831,7 +827,6 @@ nav ul li a:focus::after {
     }
     .header-text {
         margin-top: 30%;
-        padding-bottom: 20px;
     }
     .header-text h1 {
         font-size: 48px;
